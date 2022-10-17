@@ -1,0 +1,315 @@
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    html,
+    body {
+        background-color: white;
+        color: black;
+        text-rendering: optimizeLegibility;
+        font-size: 16px;
+        font-family: 'Work Sans', 'Arial', sans-serif;
+    }
+    
+    .row {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+    
+    header {
+        background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .7)), url('img/pexels-wendy-van-zyl-1112048.jpg');
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    
+    .header-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+    .header-box-text {
+        margin-bottom: 100px;
+    }
+    
+    .btn-ghost:link,
+    .btn-ghost:visited {
+        border: 2px solid #ed07b7;
+        color: #ed07b7;
+    }
+    
+    .btn-ghost:hover,
+    .btn-ghost:active {
+        background-color: #ed07b7;
+        color: white;
+    }
+    
+    .btn:link,
+    .btn:visited {
+        text-decoration: none;
+        padding: 10px 30px;
+        border-radius: 200px;
+    }
+    
+    .btn-full:link,
+    .btn-full:visited {
+        background-color: #ed07b7;
+        color: #fff;
+    }
+    
+    .btn-full:hover,
+    .btn-full:active {
+        background-color: #8e046e;
+    }
+    
+    h1 {
+        font-size: 500%;
+        color: #fff;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    
+    h2 {
+        font-size: 190%;
+        color: #fff;
+        font-weight: 400;
+    }
+    
+    .logo {
+        height: 100px;
+        width: auto;
+        float: left;
+        margin: 15px;
+    }
+    
+    .main-nav {
+        list-style: none;
+    }
+    
+    .main-nav li {
+        display: inline-block;
+        margin-right: 40px;
+        text-transform: uppercase;
+        float: right;
+        margin-top: 50px;
+    }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        text-decoration: none;
+        color: #fff;
+        transition: border-bottom 0.3s;
+    }
+    
+    .main-nav li a:hover,
+    .main-nav li a:active {
+        border-bottom: 2px solid #ed07b7;
+        padding-bottom: 10px;
+    }
+    
+    .about-para {
+        color: #555;
+        margin-bottom: 50px;
+        text-align: justify;
+    }
+    
+    .about-heading {
+        color: black;
+        font-size: 250%;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+    
+    .about-box {
+        margin-top: 150px;
+    }
+    
+    .about-box:first-child {
+        text-align: left;
+        padding: 0 5%;
+    }
+    
+    .about-box:last-child {
+        text-align: right;
+    }
+    
+    .about-section {
+        padding-bottom: 20px;
+    }
+    
+    .mouse-image {
+        width: 80%;
+    }
+    
+    .section-heading {
+        color: #000;
+        font-size: 250%;
+        margin-bottom: 20px;
+        margin-top: 150px;
+    }
+    
+    .section-subheading {
+        font-size: 150%;
+        color: #555;
+        font-weight: 300;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+    
+    .section-subheading:after {
+        display: block;
+        height: 2px;
+        width: 100px;
+        background-color: #ed07b7;
+        content: " ";
+        margin: 30px auto 0 auto;
+    }
+    
+    .work-section {
+        text-align: center;
+        background-color: #f4f4f4;
+    }
+    
+    .work-portfolio {
+        margin-top: 10px;
+        list-style: none;
+        width: 100%;
+    }
+    
+    .work-portfolio li {
+        display: block;
+        width: 25%;
+        float: left;
+    }
+    
+    .portfolio-image {
+        background-color: #000;
+        overflow: hidden;
+    }
+    
+    .portfolio-image img {
+        width: 100%;
+        opacity: 0.7;
+        height: auto;
+        transform: scale(1.15);
+        transition: transform 0.5s, opacity 0.5s;
+    }
+    
+    .work-para {
+        color: #fff;
+    }
+    
+    .portfolio-image img:hover {
+        transform: scale(1);
+        opacity: 1;
+    }
+    
+    .clear-fix {
+        zoom: 1;
+    }
+    
+    .clear-fix:after {
+        content: "";
+        display: table;
+        clear: both;
+        visibility: hidden;
+    }
+    
+    .services-section {
+        text-align: center;
+        background-color: #f4f4f4;
+    }
+    
+    .big-icon {
+        font-size: 250%;
+        color: #6920b0;
+        display: block;
+        margin-bottom: 30px;
+    }
+    
+    .service-heading {
+        font-size: 150%;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    
+    .service-para {
+        font-size: 90%;
+        color: #555;
+        margin-bottom: 20px;
+    }
+    
+    .service-link {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #ed07b7;
+    }
+    
+    .service-box {
+        padding: 1% 3%;
+    }
+    
+    .partners-section {
+        text-align: center;
+    }
+    
+    .partner-logo {
+        width: 65%;
+        height: auto;
+    }
+    
+    .testimonial-section {
+        text-align: center;
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url('img/pexels-eberhard-grossgasteiger-1612351.jpg');
+        background-size: cover;
+        color: #fff;
+        background-attachment: fixed;
+    }
+    
+    .testimonial-heading {
+        font-size: 250%;
+        margin-bottom: 20px;
+        margin-top: 150px;
+    }
+    
+    .testimonial-box {
+        text-align: left;
+        margin-bottom: 50px;
+    }
+    
+    blockquote {
+        font-style: italic;
+        line-height: 145%;
+        padding: 2%;
+        position: relative;
+        margin-top: 40px;
+    }
+    
+    blockquote:before {
+        content: "\201C";
+        font-size: 500%;
+        display: block;
+        position: absolute;
+        left: -5px;
+        top: -5px;
+    }
+    
+    cite {
+        display: block;
+        margin-top: 25px;
+        font-size: 90%;
+    }
+    
+    cite img {
+        border-radius: 50%;
+        height: 20%;
+        width: 15%;
+        vertical-align: middle;
+        margin-right: 20px;
+    }
