@@ -19,6 +19,7 @@ body {
 }
 
 header {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .7)), url('img/pexels-wendy-van-zyl-1112048.jpg');
     background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .7)), url('img/pexels-wendy-van-zyl-1112048.jpg');
     height: 100vh;
     background-size: cover;
@@ -30,6 +31,7 @@ header {
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
 }
@@ -108,6 +110,7 @@ h2 {
 .main-nav li a:visited {
     text-decoration: none;
     color: #fff;
+    -webkit-transition: border-bottom 0.3s;
     transition: border-bottom 0.3s;
 }
 
@@ -201,8 +204,12 @@ h2 {
     width: 100%;
     opacity: 0.7;
     height: auto;
+    -webkit-transform: scale(1.15);
     transform: scale(1.15);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
     transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 
 .work-para {
@@ -210,6 +217,7 @@ h2 {
 }
 
 .portfolio-image img:hover {
+    -webkit-transform: scale(1);
     transform: scale(1);
     opacity: 1;
 }
@@ -270,6 +278,7 @@ h2 {
 
 .testimonial-section {
     text-align: center;
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url('img/pexels-eberhard-grossgasteiger-1612351.jpg');
     background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url('img/pexels-eberhard-grossgasteiger-1612351.jpg');
     background-size: cover;
     color: #fff;
@@ -467,6 +476,7 @@ footer {
 .social-links li a:visited {
     text-decoration: none;
     color: #888;
+    -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
 
@@ -485,6 +495,7 @@ footer {
 .fa-twitter,
 .fa-google-plus-g,
 .fa-instagram {
+    -webkit-transition: color 0.3s;
     transition: color 0.3s;
 }
 
@@ -507,4 +518,41 @@ footer {
 footer p {
     text-align: center;
     margin-top: 50px;
+}
+
+.sticky-nav {
+    position: fixed;
+    background-color: rgba(255, 255, 255, .8);
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 2px #efefef;
+}
+
+.sticky-nav .logo {
+    height: 60px;
+    margin-top: 3px;
+}
+
+.sticky-nav .main-nav li {
+    margin-top: 30px;
+}
+
+.sticky-nav .main-nav li a:link,
+.sticky-nav .main-nav li a:visited {
+    color: #555;
+    padding: 5px 0;
+}
+
+.js--about-box {
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+.js--about-box.animate__animated {
+    opacity: 1;
+}
+
+.js-service-box {
+    animation-duration: 2s;
 }
